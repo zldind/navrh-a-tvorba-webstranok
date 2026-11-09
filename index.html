@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F8FAFC">
+    <meta name="description" content="Starému nábytku vraciame krásu a život. Pozrite si ukážky renovácií a pošlite nám fotografie na úvodné nacenenie.">
+    <title>Dielňa Druhý život — renovácia nábytku</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#uvod" aria-label="Dielňa Druhý život, úvod">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 16 7l9 16.5H7Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 23.5 16 16l4 7.5" stroke="currentColor" stroke-width="1.7"/></svg>
+          </span>
+          <span>Druhý život<span class="brand-period">.</span><small>REŠTAURÁTORSKÁ DIELŇA</small></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Hlavná navigácia">
+          <a href="#uvod">Úvod</a>
+          <a href="#dopyt">Dopyt</a>
+          <a href="#galeria">Galéria</a>
+          <a href="#partneri">B2B</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="obsah">
+      <section class="hero" id="uvod" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Poctivá práca. Zachovaný príbeh.</p>
+            <h1 id="hero-title">Drevo, ktoré<br>si zaslúži <span>druhý život.</span></h1>
+            <p class="hero-description">Renovujeme a reštaurujeme nábytok, ku ktorému sa viažu spomienky. Citlivo, ručne a s rešpektom k pôvodnému remeslu.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#dopyt">Naceniť renováciu z fotky <span aria-hidden="true">↗</span></a>
+              <a class="quiet-link" href="#galeria">Pozrieť ukážky <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-note">
+              <span class="hero-note-icon" aria-hidden="true">✳</span>
+              <p>Začnime fotografiou.<br><strong>Úvodný odhad bez návštevy dielne.</strong></p>
+            </div>
+          </div>
+
+          <div class="hero-image-wrap">
+            <img class="hero-image" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Drevený nábytok a prírodné materiály v pokojnom interiéri" fetchpriority="high">
+            <div class="image-note">
+              <span class="image-note-icon" aria-hidden="true">↗</span>
+              <span>Každý kus má<br>svoj vlastný príbeh.</span>
+            </div>
+            <span class="image-index" aria-hidden="true">DIELŇA / 01</span>
+          </div>
+        </div>
+        <div class="hero-bottomline" aria-hidden="true"><span>RENOVÁCIA NÁBYTKU</span><span>RUČNÉ REMESLO&nbsp; · &nbsp;ŠETRNÉ MATERIÁLY</span><span>01 — 04</span></div>
+      </section>
+
+      <section class="intro-strip" aria-label="O dielni">
+        <div class="container intro-strip-inner">
+          <p>Nie všetko staré treba vymeniť.</p>
+          <span aria-hidden="true">✳</span>
+          <p>Niekedy stačí vrátiť tomu, čo už máme, jeho krásu.</p>
+          <a href="#postup">Ako pracujeme <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="galeria" aria-labelledby="portfolio-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Pred a po</p>
+              <h2 id="portfolio-title">Krása, ktorá<br>sa <span>nestratila.</span></h2>
+            </div>
+            <div class="section-heading-aside">
+              <p>Každý kus si vyžaduje iný prístup. Pozrite si ukážky toho, čo dokáže trpezlivá práca a cit pre detail.</p>
+              <span class="section-count">01 <i></i> 03</span>
+            </div>
+          </div>
+
+          <div class="filter-row" role="group" aria-label="Filtrovať ukážky podľa typu nábytku">
+            <span class="filter-label">ZOBRAZIŤ:</span>
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Všetko</button>
+            <button class="filter-button" type="button" data-filter="stolicky" aria-pressed="false">Stoličky</button>
+            <button class="filter-button" type="button" data-filter="stoly" aria-pressed="false">Stoly</button>
+            <button class="filter-button" type="button" data-filter="komody" aria-pressed="false">Komody</button>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="work-card" data-category="stolicky">
+              <div class="work-image work-image-tall">
+                <img class="work-photo work-photo-before" src="https://images.unsplash.com/photo-1598300056393-4aac492f4344?auto=format&fit=crop&w=1000&q=85" alt="" aria-hidden="true" loading="lazy">
+                <img class="work-photo work-photo-after" src="https://images.unsplash.com/photo-1598300056393-4aac492f4344?auto=format&fit=crop&w=1000&q=85" alt="Ilustračná fotografia drevenej stoličky" loading="lazy">
+                <span class="work-label">UKÁŽKOVÝ PRÍPAD&nbsp; 01</span>
+                <span class="compare-label compare-label-before">PRED</span><span class="compare-label compare-label-after">PO</span><span class="compare-divider" aria-hidden="true"></span>
+                <span class="work-number">01</span>
+              </div>
+              <div class="work-meta"><div><p class="work-type">STOLIČKA&nbsp; · &nbsp;OBNOVA POVRCHU</p><h3>Späť k prirodzenému drevu</h3></div><span class="work-arrow" aria-hidden="true">↗</span></div>
+              <p class="technique-tag"><span></span> Ručné brúsenie · prírodný včelí vosk</p>
+            </article>
+
+            <article class="work-card work-card-offset" data-category="stoly">
+              <div class="work-image">
+                <img class="work-photo work-photo-before" src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?auto=format&fit=crop&w=1000&q=85" alt="" aria-hidden="true" loading="lazy">
+                <img class="work-photo work-photo-after" src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?auto=format&fit=crop&w=1000&q=85" alt="Ilustračná fotografia dreveného jedálenského stola" loading="lazy">
+                <span class="work-label">UKÁŽKOVÝ PRÍPAD&nbsp; 02</span>
+                <span class="compare-label compare-label-before">PRED</span><span class="compare-label compare-label-after">PO</span><span class="compare-divider" aria-hidden="true"></span>
+                <span class="work-number">02</span>
+              </div>
+              <div class="work-meta"><div><p class="work-type">JEDÁLENSKÝ STÔL&nbsp; · &nbsp;RENOVÁCIA</p><h3>Stôl pripravený na ďalšie roky</h3></div><span class="work-arrow" aria-hidden="true">↗</span></div>
+              <p class="technique-tag"><span></span> Oprava dyhy · olejová povrchová úprava</p>
+            </article>
+
+            <article class="work-card" data-category="komody">
+              <div class="work-image work-image-tall">
+                <img class="work-photo work-photo-before" src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=85" alt="" aria-hidden="true" loading="lazy">
+                <img class="work-photo work-photo-after" src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=85" alt="Ilustračná fotografia dreveného nábytku" loading="lazy">
+                <span class="work-label">UKÁŽKOVÝ PRÍPAD&nbsp; 03</span>
+                <span class="compare-label compare-label-before">PRED</span><span class="compare-label compare-label-after">PO</span><span class="compare-divider" aria-hidden="true"></span>
+                <span class="work-number">03</span>
+              </div>
+              <div class="work-meta"><div><p class="work-type">KOMODA&nbsp; · &nbsp;ŠETRNÉ OŽIVENIE</p><h3>Patina, ktorú sa oplatí zachovať</h3></div><span class="work-arrow" aria-hidden="true">↗</span></div>
+              <p class="technique-tag"><span></span> Lokálna oprava · šelaková politúra</p>
+            </article>
+          </div>
+          <p class="portfolio-disclaimer">Ilustračné porovnania povrchovej úpravy, nie zdokumentované realizácie dielne. Fotografie skutočných renovácií doplníme po ich zdokumentovaní.</p>
+          <div class="portfolio-cta"><p>Máte doma podobný kúsok?</p><a class="text-arrow" href="#dopyt">Pošlite nám jeho fotografiu <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="section approach" id="postup" aria-labelledby="approach-title">
+        <div class="container">
+          <div class="approach-top">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Na čom si zakladáme</p>
+              <h2 id="approach-title">Dôvera v každom<br><span>kroku.</span></h2>
+            </div>
+            <p class="approach-intro">Ku každému kusu pristupujeme individuálne. Vopred si vysvetlíme možnosti, rozsah aj ďalší postup.</p>
+          </div>
+
+          <div class="approach-grid">
+            <article class="approach-card">
+              <span class="approach-number">01</span>
+              <div class="approach-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M12 34 31.5 14.5a4.24 4.24 0 0 1 6 6L18 40h-6v-6Z" stroke="currentColor" stroke-width="1.6"/><path d="m27 19 6 6M10 10h12M10 16h7" stroke="currentColor" stroke-width="1.6"/></svg></div>
+              <h3>Citlivé zachovanie patiny</h3>
+              <p>Pred zásahom posúdime stav a dohodneme sa, ktoré stopy času zachovať. Cieľom je rešpektovať pôvodný charakter nábytku.</p>
+            </article>
+            <article class="approach-card">
+              <span class="approach-number">02</span>
+              <div class="approach-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 7c-5.8 7.4-12 15.1-12 22a12 12 0 1 0 24 0c0-6.9-6.2-14.6-12-22Z" stroke="currentColor" stroke-width="1.6"/><path d="M18 30c.5 3.2 2.5 5.1 5.5 5.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+              <h3>Transparentný odhad</h3>
+              <p>Vysvetlíme, čo cenu ovplyvňuje a aké práce navrhujeme. Z fotografií pripravíme úvodný odhad; konečný rozsah potvrdíme po posúdení kusu.</p>
+            </article>
+            <article class="approach-card">
+              <span class="approach-number">03</span>
+              <div class="approach-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M10 37V18l14-9 14 9v19H10Z" stroke="currentColor" stroke-width="1.6"/><path d="M19 37V25h10v12M16 20h.01M24 17h.01M32 20h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+              <h3>Doprava podľa dohody</h3>
+              <p>V dopyte môžete označiť záujem o odvoz a dovoz. Možnosti dopravy aj osobnej obhliadky si potvrdíme podľa lokality a typu nábytku.</p>
+            </article>
+          </div>
+
+          <div class="estimate-panel">
+            <div class="estimate-mark" aria-hidden="true">€</div>
+            <div><p class="estimate-kicker">ČO OVPLYVŇUJE CENU</p><h3>Každý kus je iný.<br>Odhad pripravíme podľa fotografií.</h3></div>
+            <p>Rozsah poškodenia, typ dreva, pôvodná povrchová úprava a požadovaný výsledok. To všetko si prejdeme ešte pred začiatkom prác.</p>
+            <a class="button button-outline" href="#dopyt">Získať úvodný odhad <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <section class="credentials" aria-labelledby="credentials-title">
+            <div class="credentials-heading">
+              <div>
+                <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Odbornosť a osvedčenia</p>
+                <h3 id="credentials-title">Kvalitu ukazujeme<br><span>poctivou prácou.</span></h3>
+              </div>
+              <p>Konkrétne certifikáty a osvedčenia dielne doplníme po potvrdení. Neuvádzame označenia, ktoré nie sú doložené.</p>
+            </div>
+            <div class="credentials-list">
+              <article><span class="credential-icon" aria-hidden="true">01</span><div><h4>Tradičné techniky</h4><p>Ručné brúsenie a povrchové úpravy volené podľa konkrétneho kusu.</p></div></article>
+              <article><span class="credential-icon" aria-hidden="true">02</span><div><h4>Materiály s rozvahou</h4><p>Oleje, vosky a moridlá vyberáme podľa dreva a požadovaného výsledku.</p></div></article>
+              <article><span class="credential-icon credential-pending" aria-hidden="true">+</span><div><h4>Certifikáty dielne</h4><p>Doplníme po overení. Zverejníme iba platné a doložené osvedčenia.</p></div></article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="quote-section" id="dopyt" aria-labelledby="quote-title">
+        <div class="container quote-grid">
+          <div class="quote-copy">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-mark" aria-hidden="true"></span> Prvý krok je jednoduchý</p>
+            <h2 id="quote-title">Každý príbeh<br>sa začína <span>fotkou.</span></h2>
+            <p>Odfoťte nábytok, opíšte nám, čo potrebuje, a my sa vám ozveme s ďalším postupom.</p>
+            <div class="quote-steps">
+              <div><span>01</span><p>Vyplníte pár údajov</p></div>
+              <div><span>02</span><p>Pridáte fotografie</p></div>
+              <div><span>03</span><p>Navrhneme ďalší krok</p></div>
+            </div>
+            <p class="quote-privacy">Fotografie použijeme iba na posúdenie vášho dopytu.</p>
+          </div>
+
+          <form class="quote-form" id="quote-form">
+            <div class="form-heading"><span>ONLINE DOPYT</span><span>ODHAD Z FOTOGRAFIÍ</span></div>
+            <div class="form-row">
+              <label for="name">Vaše meno <span aria-hidden="true">*</span><input id="name" name="name" autocomplete="name" placeholder="Ako vás oslovíme?" required></label>
+              <label for="email">E-mail <span aria-hidden="true">*</span><input id="email" name="email" type="email" autocomplete="email" placeholder="vas@email.sk" required></label>
+            </div>
+            <div class="form-row">
+              <label for="request-type">Čo potrebujete? <span aria-hidden="true">*</span>
+                <select id="request-type" name="requestType" required>
+                  <option value="renovation">Renováciu nábytku</option>
+                  <option value="consultation">Konzultáciu</option>
+                  <option value="partnership">Spoluprácu pre dizajnéra / architekta</option>
+                </select>
+              </label>
+              <label for="furniture-type">Typ nábytku
+                <select id="furniture-type" name="furnitureType">
+                  <option value="">Vyberte typ</option>
+                  <option>Stolička alebo kreslo</option>
+                  <option>Stôl</option>
+                  <option>Komoda alebo skriňa</option>
+                  <option>Iný kus</option>
+                </select>
+              </label>
+            </div>
+            <label for="description">Čo by sme mali vedieť? <span aria-hidden="true">*</span>
+              <textarea id="description" name="description" rows="3" placeholder="Opíšte stav, poškodenie alebo svoju predstavu..." required></textarea>
+            </label>
+            <div class="upload-field">
+              <label class="upload-label" for="photos">
+                <span class="upload-icon" aria-hidden="true">+</span>
+                <span><strong>Pridať fotografie</strong><small>Vyberte 1 až 3 fotky · JPG, PNG alebo WebP</small></span>
+                <span class="upload-action">Vybrať súbory</span>
+              </label>
+              <input class="visually-hidden" id="photos" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple required>
+              <p class="file-list" id="file-list" aria-live="polite">Bez fotografií</p>
+            </div>
+            <label class="check-row" for="transport">
+              <input id="transport" name="transport" type="checkbox">
+              <span class="custom-check" aria-hidden="true"></span>
+              <span>Mám záujem o kompletnú dopravu <small>Odvoz a dovoz nábytku</small></span>
+            </label>
+            <label class="check-row" for="inspection">
+              <input id="inspection" name="inspection" type="checkbox">
+              <span class="custom-check" aria-hidden="true"></span>
+              <span>Chcem sa dohodnúť na osobnej obhliadke</span>
+            </label>
+            <button class="button button-primary form-submit" type="submit">Pripraviť dopyt <span aria-hidden="true">↗</span></button>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            <p class="form-note">Povinné polia sú označené <span aria-hidden="true">*</span>. Formulár zatiaľ slúži ako ukážka — odosielanie treba napojiť na e-mail alebo formulárovú službu.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="partner-section" id="partneri" aria-labelledby="partner-title">
+        <div class="container partner-inner">
+          <div class="partner-mark" aria-hidden="true">D / P</div>
+          <div class="partner-copy">
+            <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Pre interiérových dizajnérov a architektov</p>
+            <h2 id="partner-title">Dobré partnerstvo<br>má <span>pevný základ.</span></h2>
+            <p>Hľadáte remeselného partnera pre svoj projekt? Radi s vami preberieme renováciu, povrchové úpravy aj možnosti spolupráce.</p>
+            <a class="button button-primary" href="#dopyt" data-request="partnership">Osloviť dielňu <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="partner-aside">
+            <div><span>01</span><p>Spoločné plánovanie<br>projektov</p></div>
+            <div><span>02</span><p>Konzultácia materiálov<br>a povrchov</p></div>
+            <div><span>03</span><p>Dohodnutý postup<br>a rozsah prác</p></div>
+            <small>Podklady a katalóg pripravíme na vyžiadanie.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-cta" aria-label="Požiadať o nacenenie">
+        <div class="container closing-inner">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Starý kus. Nová kapitola.</p>
+          <h2>Čo ak to najlepšie<br>ešte len <span>príde?</span></h2>
+          <a class="button button-primary" href="#dopyt">Povedzte nám o svojom nábytku <span aria-hidden="true">↗</span></a>
+        </div>
+        <span class="closing-decoration" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand footer-brand" href="#uvod" aria-label="Dielňa Druhý život, späť na úvod">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 16 7l9 16.5H7Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 23.5 16 16l4 7.5" stroke="currentColor" stroke-width="1.7"/></svg></span>
+          <span>Druhý život<span class="brand-period">.</span><small>REŠTAURÁTORSKÁ DIELŇA</small></span>
+        </a>
+        <p>Remeslo, ktoré vracia príbehom pokračovanie.</p>
+        <a class="footer-top" href="#uvod">Späť na začiatok <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="current-year">2026</span> Dielňa Druhý život</span><span>Poctivá práca. Dlhý život.</span><a href="#dopyt">Kontaktovať dielňu <span aria-hidden="true">↗</span></a></div>
+    </footer>
+  </body>
+</html>
