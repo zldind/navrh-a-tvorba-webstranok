@@ -38,6 +38,87 @@ document.querySelectorAll(".filter-button").forEach((button) => {
   });
 });
 
+document.querySelectorAll(".work-image").forEach((comparison) => {
+  const divider = comparison.querySelector(".compare-divider");
+  let activePointerId = null;
+
+  function setPosition(clientX) {
+    const bounds = comparison.getBoundingClientRect();
+    const position = Math.min(100, Math.max(0, ((clientX - bounds.left) / bounds.width) * 100));
+    const roundedPosition = Math.round(position);
+
+    comparison.style.setProperty("--compare-position", `${position}%`);
+    divider.setAttribute("aria-valuenow", String(roundedPosition));
+    divider.setAttribute("aria-valuetext", `Pred a po, ${roundedPosition} %`);
+  }
+
+  divider.setAttribute("role", "slider");
+  divider.setAttribute("tabindex", "0");
+  divider.removeAttribute("aria-hidden");
+  divider.setAttribute("aria-label", "Posúvač porovnania Pred a Po");
+  divider.setAttribute("aria-orientation", "horizontal");
+  divider.setAttribute("aria-valuemin", "0");
+  divider.setAttribute("aria-valuemax", "100");
+  divider.setAttribute("aria-valuenow", "50");
+  divider.setAttribute("aria-valuetext", "Pred a po, 50 %");
+  comparison.style.setProperty("--compare-position", "50%");
+
+  divider.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0 && event.pointerType === "mouse") return;
+    event.preventDefault();
+    activePointerId = event.pointerId;
+    divider.setPointerCapture(event.pointerId);
+    setPosition(event.clientX);
+  });
+
+  divider.addEventListener("pointermove", (event) => {
+    if (event.pointerId === activePointerId) setPosition(event.clientX);
+  });
+
+  function stopDragging(event) {
+    if (event.pointerId !== activePointerId) return;
+    activePointerId = null;
+    if (divider.hasPointerCapture(event.pointerId)) {
+      divider.releasePointerCapture(event.pointerId);
+    }
+  }
+
+  divider.addEventListener("pointerup", stopDragging);
+  divider.addEventListener("pointercancel", stopDragging);
+  divider.addEventListener("lostpointercapture", () => {
+    activePointerId = null;
+  });
+
+  divider.addEventListener("keydown", (event) => {
+    const currentPosition = Number(divider.getAttribute("aria-valuenow"));
+    const step = event.shiftKey ? 10 : 1;
+    let nextPosition;
+
+    switch (event.key) {
+      case "ArrowLeft":
+      case "ArrowDown":
+        nextPosition = currentPosition - step;
+        break;
+      case "ArrowRight":
+      case "ArrowUp":
+        nextPosition = currentPosition + step;
+        break;
+      case "Home":
+        nextPosition = 0;
+        break;
+      case "End":
+        nextPosition = 100;
+        break;
+      default:
+        return;
+    }
+
+    event.preventDefault();
+    const bounds = comparison.getBoundingClientRect();
+    setPosition(bounds.left + (Math.min(100, Math.max(0, nextPosition)) / 100) * bounds.width);
+  });
+});
+
 const photosInput = document.querySelector("#photos");
 const fileList = document.querySelector("#file-list");
 const formFeedback = document.querySelector("#form-feedback");
